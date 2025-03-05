@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -35,6 +36,15 @@ export class ProductService {
 
   getProductById(id: number): Observable<any> {
     return of(this.products.find(product => product.id === id));
+  }
+  searchProducts(query: string): Observable<any[]> {
+    return of(this.products).pipe(
+      map(products=>
+        products.filter(product =>
+          product.name.toLowerCase().includes(query.toLowerCase())
+        )
+      )
+    )
   }
 
   constructor() { }

@@ -1,3 +1,8 @@
+<div class="search-wrapper">
+    <input class="search-bar" type="text" [(ngModel)]="searchQuery" (input)="onSearchChange(searchQuery)" placeholder="Search products..." />
+</div>
+
+
 <div class="product-list">  
     <div *ngFor="let product of products">
         <app-product-card [product]="product"></app-product-card>
