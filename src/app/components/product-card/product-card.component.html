@@ -1,6 +1,8 @@
 <div class="product-card">
-    <h3>{{ product.name }}</h3>
-    <p>{{ product.description }}</p>
-    <p><strong>${{ product.price }}</strong></p>
-    <button (click)="handleClick()">View Details</button>
+    <h2 class="product-name-price">{{ product.name }}</h2>
+    <p class="product-desc">{{ product.description }}</p>
+    <p class="product-name-price">${{ product.price }}</p>
+    <div class="button-wrapper">
+        <button (click)="handleClick()" class="card-button">View Details</button>
+    </div>
 </div>

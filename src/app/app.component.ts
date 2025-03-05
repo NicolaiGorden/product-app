@@ -10,7 +10,7 @@ import { ProductCardComponent } from './components/product-card/product-card.com
 })
 
 export class AppComponent {
-  // title = 'product-app';
+  title = 'product-app';
   sampleProduct = {
     id: 1,
     name: 'test product',
