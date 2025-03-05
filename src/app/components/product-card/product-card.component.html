@@ -3,6 +3,6 @@
     <p class="product-desc">{{ product.description }}</p>
     <p class="product-price">${{ product.price }}</p>
     <div class="button-wrapper">
-        <button (click)="handleClick()" class="card-button">View Details</button>
+        <button class="card-button" [routerLink]="'/products/' + product.id">View Details</button>
     </div>
 </div>
