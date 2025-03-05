@@ -3,10 +3,10 @@
 A simple angular project that displays a list of products.
 
 ## Features
--Displays a list of products on the /products page.
--Clicking 'View Details' displays a product's details.
--Fetches data asynchronously using Services.
--Uses angular routing to navigate between pages.
+*Displays a list of products on the /products page.
+*Clicking 'View Details' displays a product's details.
+*Fetches data asynchronously using Services.
+*Uses angular routing to navigate between pages.
 
 ## Installation & Setup
 
